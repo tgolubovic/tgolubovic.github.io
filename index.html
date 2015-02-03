@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html><head>
-    <meta content="text/html; charset=UTF-16" http-equiv="content-type"/>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>  <link rel="stylesheet" href="style/main.css" type="text/css"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/main.css" type="text/css"/>
+    <link href="style/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/layout/TG.ico"/>
+    <meta content="index, follow" name="robots"/>
     <title>Tamara Golubovic - Portfolio</title>
 </head>
   
@@ -11,17 +15,24 @@
           <a href="index.html" id="logoLink"><img src="images/signature.png" id="logoLink" alt="Tamara Golubovic - Portfolio"/></a>
           <nav id="navigation" name="Navigation">
             <div class = "menu_link"><a href="about.html" id="first" name="About">About</a></div
-            ><div class = "menu_link"><a href="#" name="Portraits">Portraits</a></div
-            ><div class = "menu_link"><a href="#" id="last" name="Sketches and Ink Drawings">Sketches &amp Ink Drawings</a></div
+            ><div class = "menu_link"><a href="portraits.html" name="Portraits">Portraits</a></div
+            ><div class = "menu_link"><a href="sketches.html" id="last" name="Sketches and Ink Drawings">Sketches &amp Ink Drawings</a></div
           ></nav>
         </div>
     <div id="content">
-        <div class="column" id="colleft"></div
-        ><div class="column" id="colmid"></div
-        ><div class="column" id="colright">
+        <div id="frame">
+            <a class="select" id="portraits" href="portraits.html">
+                <img src="images/portraitPreview.jpg" id="portraitImage" alt="Portraits"/><p>Portraits</p>
+            </a>
+            <a class="select" id="sketches and ink drawings" href="sketches.html">
+                <img src="images/sketchPreview.jpg" id="sketchImage" alt="Sketches and Ink Drawings"/><p>Sketches &amp Ink Drawings</p>
+            </a>
         </div>
     </div>
     <div id="footer">
+        <div id="frame">
+            <p>&copy 2015 Tamara Golubovic</p>
+        </div>
     </div>
   </div>  
 </body>

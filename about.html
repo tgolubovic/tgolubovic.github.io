@@ -1,13 +1,84 @@
 <!DOCTYPE html>
-
-<html>
-<head>
-    <title>About tamara golubovic</title>
+<html><head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/main.css" type="text/css"/>
+    <link rel="stylesheet" href="style/about.css" type="text/css"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/layout/TG.ico"/>
+    <meta content="index, follow" name="robots"/>
+    <title>Tamara Golubovic - About</title>
 </head>
-
+  
 <body>
-
-
-
+    <div id= "container">
+        <div id="header">
+          <a href="index.html" id="logoLink"><img src="images/signature.png" id="logoLink" alt="Tamara Golubovic - Portfolio"/></a>
+          <nav id="navigation" name="Navigation">
+            <div class = "menu_link"><a href="about.html" id="first" name="About">About</a></div
+            ><div class = "menu_link"><a href="portraits.html" name="Portraits">Portraits</a></div
+            ><div class = "menu_link"><a href="sketches.html" id="last" name="Sketches and Ink Drawings">Sketches &amp Ink Drawings</a></div
+          ></nav>
+        </div>
+    <div id="content">
+        <div id="frame">
+            <h1>About</h1>
+            <p>My name is Tamara Golubovic and this is my portfolio! Check out my work and get in contact with me if you would like to know more.</p>
+            <form id="kontaktformular" action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);">
+                <input name="skip_WhereToSend" type="hidden" value="tgolubovic@arcor.de" />
+                <input name="skip_SnapHostID" type="hidden" value="4B4FWFWXB2AL" />
+                <input name="skip_WhereToReturn" type="hidden" value="index.html" />
+                <input name="skip_Subject" type="hidden" value="Portfolio Kontaktformular" />
+                <input name="skip_ShowUsersIp" type="hidden" value="1" />
+                <input name="skip_SendCopyToUser" type="hidden" value="1" />
+                <script type="text/javascript">
+                    function ValidateForm(frm) {
+                    if (frm.Name.value == "") {alert('Bitte geben Sie einen Namen an.');frm.Name.focus();return false;}
+                    if (frm.FromEmailAddress.value == "") {alert('Bitte geben Sie eine Emailadresse an.');frm.FromEmailAddress.focus();return false;}
+                    if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Bitte geben Sie eine valide Emailadresse an.');frm.FromEmailAddress.focus();return false;}
+                    if (frm.Comments.value == "") {alert('Bitte geben Sie eine Nachricht ein.');frm.Comments.focus();return false;}
+                    if (frm.skip_CaptchaCode.value == "") {alert('Bitte geben Sie das Captcha ein.');frm.skip_CaptchaCode.focus();return false;}
+                    return true; }
+                    function ReloadCaptchaImage(captchaImageId) {
+                    var obj = document.getElementById(captchaImageId);
+                    var src = obj.src;
+                    var date = new Date();
+                    var pos = src.indexOf('&rad=');
+                    if (pos >= 0) { src = src.substr(0, pos); }
+                    obj.src = src + '&rad=' + date.getTime();
+                    return false; }
+                </script>
+                <table border="0" cellpadding="5" cellspacing="0" width="600">
+                    <tr>
+                    <td>Name:</td>
+                    <td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
+                    </tr><tr>
+                    <td>E-mail:</td>
+                    <td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
+                    </tr><tr>
+                    <td>Message:</td>
+                    <td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
+                    </tr><tr>
+                    <td colspan="2" align="center"> <br />
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr><td colspan="2" style="padding-bottom:18px;">
+                    <tr valign="top"><td> <i>Please enter Captcha:</i>
+                    <input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
+                    </td><td style="text-align: center;">
+                    <a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx" target="_blank"><img id="CaptchaImage" style="margin-left:20px;"
+                    src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=4B4FWFWXB2AL&ImgType=2" /></a><br />
+                    <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:10px;">reload image</span></a> </td></tr>
+                </table> <br />
+                <input name="skip_Submit" type="submit" value="Submit" />
+                </td></tr>
+                </table><br />
+                </form>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="frame">
+            <p>&copy 2015 Tamara Golubovic</p>
+        </div>
+    </div>
+  </div>  
 </body>
 </html>

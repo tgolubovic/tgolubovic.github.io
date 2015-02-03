@@ -1,0 +1,16 @@
+#content #frame{
+    text-align: center;
+}
+
+.select{
+    text-align: center;
+    display: inline-block;
+    width:47%;
+    font-size: 10pt;
+    margin: 1%;
+}
+
+.select img{
+    width: 100%;
+    height: auto;
+}
